@@ -10,6 +10,6 @@ Ne fonctionne que sous windows
 
 # Utilisation
 
-Au clic sur le fichier ordonnanceur, une invite de commande demande quel site doit etre audité. Il va automatiquement en chercher le sitemap et génère un rapport personnalisé peu après.
+Au clic sur le fichier diagnostic, une invite de commande demande quel site doit etre audité. Il va automatiquement en chercher le sitemap et génère un rapport personnalisé peu après.
 
-Attention ! au delà de cent pages, le processus peut etre long.
+Attention ! au delà de cent pages, le processus peut être long.
