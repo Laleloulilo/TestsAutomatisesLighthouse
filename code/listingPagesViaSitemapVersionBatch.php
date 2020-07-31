@@ -28,7 +28,7 @@ function ListeURLSite($adresseSitemap)
                 $listeCommandes .= ListeURLSite($url->nodeValue);
             } else {
                 $listeCommandes .= $url->nodeValue . "\n";
-                echo "\n".$url->nodeValue;
+                echo "\n" . $url->nodeValue;
             }
         }
     }
@@ -37,13 +37,13 @@ function ListeURLSite($adresseSitemap)
 
 }
 
-$tableau = explode("\n",$liste); 
-$tableau = array_map('trim',$tableau);
+$tableau = explode("\n", $liste);
+$tableau = array_map('trim', $tableau);
 // On supprime les doublons
 $tableau = array_unique($tableau);
 // On se limite aux 100 premiers items
-$tableau = array_slice($tableau, 0, 100);  
-file_put_contents($dossierRoutine . '/' . $sousDossierRoutine . "/" . $nomFichierListe,implode(PHP_EOL, $tableau));
+$tableau = array_slice($tableau, 0, 100);
+file_put_contents($dossierRoutine . '/' . $sousDossierRoutine . "/" . $nomFichierListe, implode(PHP_EOL, $tableau));
 
 
 ?>
